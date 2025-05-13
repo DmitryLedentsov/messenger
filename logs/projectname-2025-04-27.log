@@ -1,0 +1,5 @@
+2025-04-27 07:47:44.805  INFO 15496 --- [           main] com.dimka228.messenger.MessengerApplication : Starting MessengerApplication v0.0.1 using Java 17.0.9 with PID 15496 (C:\Users\Queen\Documents\github\anon-messenger\out\messenger-0.0.1.jar started by Queen in C:\Users\Queen\Documents\github\anon-messenger)
+2025-04-27 07:47:44.857  INFO 15496 --- [           main] com.dimka228.messenger.MessengerApplication : No active profile set, falling back to 1 default profile: "default"
+2025-04-27 07:48:09.250  INFO 15496 --- [           main] com.dimka228.messenger.MessengerApplication : Started MessengerApplication in 25.502 seconds (process running for 28.001)
+2025-04-27 07:48:12.208  INFO 15496 --- [nio-9087-exec-1] com.dimka228.messenger.event.WebSocketEventListener : New session for user: aboba1
+2025-04-27 07:48:20.098  INFO 15496 --- [ionShutdownHook] com.dimka228.messenger.event.WebSocketEventListener : Session disconnected user: aboba1

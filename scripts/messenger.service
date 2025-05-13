@@ -1,0 +1,25 @@
+[Unit]
+Description=Messenger Service
+After=network.target postgresql.service
+Requires=postgresql.service
+
+[Service]
+User=root
+Group=root
+Type=simple
+Restart=on-failure
+RestartSec=5s
+ExecStart=/home/messenger/jdk-21.0.2/bin/java -jar /home/messenger/out/messenger-0.0.1.jar --port=9087 --messenger.public-url="https://46.229.212.56:9087" --messenger.websocket.url="wss://46.229.212.56:9087/ws" --server.ssl.enabled=true
+WorkingDirectory=/home/messenger
+
+# Журналирование
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=messenger
+
+# Ограничения ресурсов
+LimitNOFILE=65536
+LimitNPROC=4096
+
+[Install]
+WantedBy=multi-user.target
